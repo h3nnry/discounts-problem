@@ -1,7 +1,7 @@
-#Discounts Problem
+# Discounts Problem
 We need you to build us a small (micro)service that calculates discounts for orders.
 
-##How discounts work
+## How discounts work
 For now, there are three possible ways of getting a discount:
 
 - A customer who has already bought for over € 1000, gets a discount of 10% on the whole order.

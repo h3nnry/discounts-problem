@@ -13,6 +13,7 @@ By the way: there may become more ways of granting customers discounts in the fu
 ## Project setup
 - Build & Run (docker-compose up --build -d)
 - Composer install in www directory
+- In www directory run: php artisan migrate:fresh && php artisan db:seed
 - Change db host in .env to be same like in docker 
 
 ## Added unit tests

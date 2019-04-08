@@ -14,3 +14,7 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->group(['prefix' => '/discount'], function () use ($router) {
+    $router->post('/', 'DiscountController@post');
+});

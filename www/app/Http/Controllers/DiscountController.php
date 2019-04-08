@@ -35,7 +35,10 @@ class DiscountController extends Controller
         \Validator::extend('validate_price', function($field, $value) use ($data) {
             $i = (int) filter_var($field, FILTER_SANITIZE_NUMBER_INT);
             $product = Product::where('product_id', '=', $data['items'][$i]['product-id'])->first();
-            return number_format((float)$value, 2) === number_format((float)$product->price, 2);
+            if (!empty($product)) {
+                return number_format((float)$value, 2) === number_format((float)$product->price, 2);
+            }
+            return true;
         });
         \Validator::extend('validate_total', function($field, $value) use ($data) {
             $total = 0;

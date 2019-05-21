@@ -15,6 +15,6 @@ By the way: there may become more ways of granting customers discounts in the fu
 - Composer install in www directory
 - In www directory run: php artisan migrate:fresh && php artisan db:seed
 - Change db host in .env to be same like in docker 
-- Microservice endpoint - /discount 
+- Microservice endpoint - /api/discount 
 
 ## Added unit tests
